@@ -2,6 +2,9 @@ from langchain.document_loaders import PyPDFLoader, DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 from langchain_huggingface import HuggingFaceEmbeddings
+import os
+
+# os.environ['HF_TOKEN']=os.getenv("HF_TOKEN")
 
 #Extract Data From the PDF File
 def load_pdf_file(data):
