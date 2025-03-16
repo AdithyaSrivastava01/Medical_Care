@@ -27,38 +27,27 @@ This project leverages a Retrieval-Augmented Generation (RAG)-based web applicat
 ## File Structure  
 
 ```plaintext
-performance_index_project/
+Medical_Care/
 │
-├── notebook/
-│   ├── data/
-│   │   └── stud.csv                 # Public Dataset
-│   ├── EDA STUDENT.ipynb            # EDA and visualization of the data
-│   └── MODELTRAINING.ipynb          # Model Training Notebook
-│
-├── artifacts/                 
-│   ├── model.pkl                    # Pretrained model for prediction
-│   ├── test.csv                     # Dataset used for testing
-│   ├── train.csv                    # Dataset used for training
-│   └── processor.pkl                # Preprocessor used during prediction stage
-│
+├── research/
+│   └── new_research.ipynb           # Investigations
+│                   
 ├── src/                             # Main scripts
-│   ├── components/         
-│   │    ├── data_ingestion.py       # Data Ingestion file
-│   │    ├── data_transformation.py  # Data transformation file
-│   │    └── model_trainer.py        # Model Training file
-│   │
-│   ├── pipeline/       
-│   │    └── predict_pipeline.py     # Prediction Pipeline file
-│   │
-│   ├── exception.py                 # Exception Handling file
-│   ├── logger.py                    # Logger file to log activities
-│   └── utils.py                     # Utility script
+│   ├── __init__.py                  # Initialization of the objects
+│   ├── helpers.py                   # Helper functions for text chunking and embedding the documents
+│   └── prompt.py                    # Prompt Engineering Template for the LLM
 │
+├── static/
+│   └── style.css                    # CSS file that includes the styling of the Web page
+│ 
 ├── templates/                       # HTML templates for the web app
-│   ├── index.html                   # Welcome page
-│   └── home.html                    # Results page
+│   └── chatbot.html                 # Chatbot Web Page
 │
+├── .gitignore
 ├── app.py                           # Main Flask application script
+├── setup.py                         # Python script to publish the Python Package
+├── template.py                      # Template Python Script to automate the process of creating the project file structure
+├── store_index.py                   # Used to create a store_index in Pinecone and store the vector Embedding
 ├── requirements.txt                 # Python dependencies
 ├── Dockerfile                       # Docker file 
 └── README.md                        # Project documentation
