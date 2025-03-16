@@ -1,4 +1,4 @@
-# VistaCare: AI-Powered Medical Query Assistant (RAG-Based Web App)
+# MedQuery AI: AI-Powered Medical Query Assistant (RAG-Based Web App)
 
 This project leverages a Retrieval-Augmented Generation (RAG)-based web application that answers medical-related queries accurately. The system ingests knowledge from a medical book titled *The GALE ENCYCLOPEDIA of MEDICINE SECOND EDITION*, enabling it to generate informed and reliable responses. The project implements an LLM-based retrieval and contextual augmentation to enhance accuracy. The application ensures efficient query resolution and improves medical information accessibility through a user-friendly web interface. 
 
@@ -8,7 +8,7 @@ This project leverages a Retrieval-Augmented Generation (RAG)-based web applicat
 
 - **Medical Query Assistant**: Implements a RAG-based approach to answer the medical queries provided by the user
 - **Gen-AI interface**: Incorporate cloud-based vector database Pinecone coupled with HuggingFace sentence transformers for Embedding and OpenAI API for LLM integration into the application. 
-- **User-Friendly Web Application**: Developed using Flask, HTML, and CSS for real-time predictions.  
+- **User-Friendly Web Application**: Developed using Flask, HTML, and CSS for real-time answers.  
 - **Cloud Deployment**: Hosted on AWS EC2 and AWS ECR for robust and scalable access.  
 - **Automation Integration**: Deployed via GitHub Actions for seamless CI/CD.  
 
