@@ -64,7 +64,9 @@ performance_index_project/
 └── README.md                        # Project documentation
 
 ```
+---
 ## Demo Video 
 https://github.com/user-attachments/assets/7d673aef-ae1c-4bc9-a3d3-8bbcf116bdce
 
-
+---
+NOTE: This full-stack Gen-AI web application was previously deployed at a Public IP Address 54:198:93:248:8080 assigned by the AWS EC2 instance
